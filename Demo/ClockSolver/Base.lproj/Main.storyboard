@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lQh-Gb-Nlp">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClockSolver" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-4w-7ko">
+                                <rect key="frame" x="20" y="456" width="560" height="124"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ook-UU-NAI">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="124"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orR-RH-Kyn">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="A1l-Gd-cC7"/>
+                                                    <constraint firstAttribute="width" constant="44" id="QXe-wi-hxZ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="1"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="A1l-Gd-cC7"/>
+                                                        <exclude reference="QXe-wi-hxZ"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="46r-vq-AtE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mCE-iJ-qyB">
+                                                <rect key="frame" x="0.0" y="43" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="GKX-wR-PPT"/>
+                                                    <constraint firstAttribute="height" constant="44" id="qB7-A2-AY0"/>
+                                                </constraints>
+                                                <state key="normal" title="2"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="GKX-wR-PPT"/>
+                                                        <exclude reference="qB7-A2-AY0"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dum-aR-RHt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8n-m1-70z">
+                                                <rect key="frame" x="0.0" y="86" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="9tu-fb-Lbv"/>
+                                                    <constraint firstAttribute="height" constant="44" id="XIG-po-eUv"/>
+                                                </constraints>
+                                                <state key="normal" title="3"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="9tu-fb-Lbv"/>
+                                                        <exclude reference="XIG-po-eUv"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EYj-kO-3r0"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="GYp-MB-d1t">
+                                        <rect key="frame" x="290" y="0.0" width="270" height="124"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaI-Df-xkb">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="fNb-Gr-Bg4"/>
+                                                    <constraint firstAttribute="height" constant="44" id="t3l-70-Je9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="4"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="fNb-Gr-Bg4"/>
+                                                        <exclude reference="t3l-70-Je9"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zZ2-0d-k1I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5t-bt-vyN">
+                                                <rect key="frame" x="0.0" y="43" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="UOq-ma-F1H"/>
+                                                    <constraint firstAttribute="height" constant="44" id="b7j-u6-Nla"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="5"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="UOq-ma-F1H"/>
+                                                        <exclude reference="b7j-u6-Nla"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0tw-VX-bi1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXB-DO-Ba6">
+                                                <rect key="frame" x="0.0" y="86" width="270" height="38"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="fAB-mR-Dva"/>
+                                                    <constraint firstAttribute="width" constant="44" id="sF4-qw-Euw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="6"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="fAB-mR-Dva"/>
+                                                        <exclude reference="sF4-qw-Euw"/>
+                                                    </mask>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="didTapNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uvI-dj-vmB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="GYp-MB-d1t" firstAttribute="width" secondItem="ook-UU-NAI" secondAttribute="width" id="X08-wW-K36"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-2C-DLo">
+                                <rect key="frame" x="119" y="74" width="362" height="362"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0lV-2C-DLo" secondAttribute="height" multiplier="1:1" id="98j-0P-xyx"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4yv-Bh-cg7" appends="YES" id="7hO-ux-e6U"/>
+                                </connections>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unsolvable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-v6-CMS">
+                                <rect key="frame" x="196" y="232" width="208" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="38"/>
+                                <color key="textColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-L6-uMo">
+                                <rect key="frame" x="281" y="237" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.8901960784313725" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0lV-2C-DLo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="G0v-Ut-glI"/>
+                            <constraint firstItem="Kzx-v6-CMS" firstAttribute="centerX" secondItem="0lV-2C-DLo" secondAttribute="centerX" id="Hhf-u1-Ab3"/>
+                            <constraint firstAttribute="trailing" secondItem="mGz-4w-7ko" secondAttribute="trailing" constant="20" id="Lbs-1e-krE"/>
+                            <constraint firstItem="mGz-4w-7ko" firstAttribute="top" secondItem="0lV-2C-DLo" secondAttribute="bottom" priority="900" constant="20" id="MWd-uk-OD9"/>
+                            <constraint firstItem="9F5-L6-uMo" firstAttribute="centerX" secondItem="0lV-2C-DLo" secondAttribute="centerX" id="Q8t-0h-GoT"/>
+                            <constraint firstItem="mGz-4w-7ko" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="QiT-bD-SzO"/>
+                            <constraint firstItem="0lV-2C-DLo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="abW-A7-I1g"/>
+                            <constraint firstItem="0lV-2C-DLo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azl-jf-yN6"/>
+                            <constraint firstItem="9F5-L6-uMo" firstAttribute="centerY" secondItem="0lV-2C-DLo" secondAttribute="centerY" id="cWw-hY-eWb"/>
+                            <constraint firstItem="Kzx-v6-CMS" firstAttribute="centerY" secondItem="0lV-2C-DLo" secondAttribute="centerY" id="oKG-Rx-k8z"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="0lV-2C-DLo" secondAttribute="trailing" constant="10" id="tQ3-1U-QGq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mGz-4w-7ko" secondAttribute="bottom" constant="20" id="ycZ-YI-wyb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DhL-a6-9rw">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6di-ys-0ce">
+                            <connections>
+                                <action selector="didResetClock:" destination="BYZ-38-t0r" id="OoL-dh-9Hu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="9F5-L6-uMo" id="aH7-RZ-V8n"/>
+                        <outlet property="clockContainer" destination="0lV-2C-DLo" id="jTL-22-jpg"/>
+                        <outlet property="unsolvableLabel" destination="Kzx-v6-CMS" id="8La-SB-Que"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="4yv-Bh-cg7">
+                    <connections>
+                        <action selector="didTapClockFace:" destination="BYZ-38-t0r" id="ulm-8o-VNo"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1287" y="645"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Sej-t8-tEj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lQh-Gb-Nlp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Dd8-da-xIn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Coc-M7-2hG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXW-eq-yvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="645"/>
+        </scene>
+    </scenes>
+</document>
