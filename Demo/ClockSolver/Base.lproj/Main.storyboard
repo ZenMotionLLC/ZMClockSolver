@@ -215,6 +215,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DhL-a6-9rw">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="xCQ-y3-Xfd">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Djy-na-kfP">
+                                <rect key="frame" x="20" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Lxu-LA-41e" kind="popoverPresentation" identifier="informationSegue" popoverAnchorView="Djy-na-kfP" id="nTn-eG-6XJ">
+                                        <popoverArrowDirection key="popoverArrowDirection" left="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="6di-ys-0ce">
                             <connections>
                                 <action selector="didResetClock:" destination="BYZ-38-t0r" id="OoL-dh-9Hu"/>
@@ -235,6 +246,52 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1287" y="645"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K6x-od-1XK">
+            <objects>
+                <viewController id="Lxu-LA-41e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y5t-ay-vyO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tby-wC-Q9u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZHt-GC-Ywe">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NpR-Ch-5fo">
+                                <rect key="frame" x="20" y="34" width="210" height="183"/>
+                                <string key="text">Enter each number starting at the top and moving clockwise.
+
+Tap the clock to show the solution. 
+
+Press the refresh button to reset the clock.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NpR-Ch-5fo" firstAttribute="leading" secondItem="ZHt-GC-Ywe" secondAttribute="leading" constant="20" id="BRj-O6-Bqh"/>
+                            <constraint firstAttribute="trailing" secondItem="NpR-Ch-5fo" secondAttribute="trailing" constant="20" id="OtX-Qy-vE7"/>
+                            <constraint firstItem="NpR-Ch-5fo" firstAttribute="top" secondItem="Y5t-ay-vyO" secondAttribute="bottom" constant="20" id="rCA-dW-N9n"/>
+                            <constraint firstItem="NpR-Ch-5fo" firstAttribute="centerY" secondItem="ZHt-GC-Ywe" secondAttribute="centerY" id="uz2-LC-b7h"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rCA-dW-N9n"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="250" height="300"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="250" height="250"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="54a-Cb-Eob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039" y="645"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Sej-t8-tEj">

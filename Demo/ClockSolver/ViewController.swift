@@ -195,3 +195,18 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: UIPopoverPresentationControllerDelegate {
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "informationSegue" {
+            let popoverViewController = segue.destinationViewController
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.Popover
+            popoverViewController.popoverPresentationController?.delegate = self
+        }
+    }
+
+    func adaptivePresentationStyleForPresentationController(controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.None
+    }
+
+}
