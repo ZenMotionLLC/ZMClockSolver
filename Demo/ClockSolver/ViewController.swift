@@ -133,7 +133,7 @@ class ViewController: UIViewController {
 
     private func numberViewWithNumber(number: Int) -> UIView {
         let view = UIView(frame: CGRectZero)
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = UIColor.whiteColor()
         view.layer.cornerRadius = view.frame.size.width / 2
         let label = UILabel(frame: view.frame)
         label.text = String(number)
